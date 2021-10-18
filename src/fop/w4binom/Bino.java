@@ -27,7 +27,7 @@ return a[n][k];
     public static void main(String[] args) {
 	int n=readInt("n:");
 	int k=readInt("k:");
-	if(k>n) {writeConsole("Invalid input");}
+	if(k>n) {write("Invalid input");}
 	else writeConsole(bino(n,k));
     }
 }
