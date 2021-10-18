@@ -3,7 +3,7 @@ package fop.w4binom;
 public class Bino extends MiniJava {
     public static int[][] pascal(int n) {
 
-        int b [][] = new int [n][n];
+        int [][] b = new int [n][n];
         for (int i=0; i<n;i++)
         {
             b[i][0] =1;
@@ -19,7 +19,7 @@ public class Bino extends MiniJava {
 
         public static int bino (int n, int k)
     {
-int a[][]= pascal(n+1);
+int [][] a= pascal(n+1);
 return a[n][k];
     }
 
@@ -27,7 +27,7 @@ return a[n][k];
     public static void main(String[] args) {
 	int n=readInt("n:");
 	int k=readInt("k:");
-	if(k>n) {write("Invalid input");}
-	else writeConsole(bino(n,k));
+	if(k>n || k<0 ) {write("Invalid input");}
+	else  write(bino(n,k));
     }
 }
