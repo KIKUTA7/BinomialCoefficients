@@ -1,6 +1,7 @@
 package fop.w4binom;
 
 public class Bino extends MiniJava {
+
         public static int bino (int n, int k)
     {
 if(n==k || k == 0) return 1;
